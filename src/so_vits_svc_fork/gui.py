@@ -1,8 +1,10 @@
 from __future__ import annotations
 
+import ctypes
 import json
 import multiprocessing
 import os
+import platform
 from copy import copy
 from logging import getLogger
 from pathlib import Path
@@ -15,6 +17,9 @@ from pebble import ProcessFuture, ProcessPool
 
 from . import __version__
 from .utils import get_optimal_device
+
+if int(platform.release()) >= 8:
+    ctypes.windll.shcore.SetProcessDpiAwareness(True)
 
 GUI_DEFAULT_PRESETS_PATH = Path(__file__).parent / "default_gui_presets.json"
 GUI_PRESETS_PATH = Path("./user_gui_presets.json").absolute()
