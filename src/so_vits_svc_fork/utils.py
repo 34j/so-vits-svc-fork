@@ -315,6 +315,7 @@ def save_checkpoint(
     iteration: int,
     checkpoint_path: Path | str,
 ) -> None:
+    model = model.to("cpu")
     LOG.info(
         "Saving model and optimizer state at epoch {} to {}".format(
             iteration, checkpoint_path
