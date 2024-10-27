@@ -33,7 +33,7 @@ svcf-gui = "so_vits_svc_fork.gui:main"
 [tool.poetry.dependencies]
 python = ">=3.9,<3.13"
 librosa = "*"
-numpy = "^1.26.4"
+numpy = "^2.0.0"
 pyworld = "*"
 requests = "*"
 scipy = "*"
