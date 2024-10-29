@@ -28,7 +28,7 @@ repos:
       - id: end-of-file-fixer
       - id: trailing-whitespace
   - repo: https://github.com/python-poetry/poetry
-    rev: 1.8.3
+    rev: 1.8.4
     hooks:
       - id: poetry-check
   - repo: https://github.com/pre-commit/mirrors-prettier
