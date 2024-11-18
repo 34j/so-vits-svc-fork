@@ -116,7 +116,7 @@ def preprocess_resample(
             warnings.warn(
                 f"Recommended folder structure has changed since v1.0.0. "
                 "Please move your dataset directly under dataset_raw folder. "
-                f"Recoginzed {in_path_relative} as {new_in_path_relative}"
+                f"Recognized {in_path_relative} as {new_in_path_relative}"
             )
             in_path_relative = new_in_path_relative
 
