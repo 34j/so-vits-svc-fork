@@ -321,7 +321,7 @@ def main():
                 sg.Text("Pad seconds"),
                 sg.Push(),
                 sg.Slider(
-                    range=(0.0, 1.0),
+                    range=(0.01, 1.0),
                     orientation="h",
                     key="pad_seconds",
                     resolution=0.01,
@@ -331,7 +331,7 @@ def main():
                 sg.Text("Chunk seconds"),
                 sg.Push(),
                 sg.Slider(
-                    range=(0.0, 3.0),
+                    range=(0.01, 3.0),
                     orientation="h",
                     key="chunk_seconds",
                     resolution=0.01,
@@ -404,7 +404,7 @@ def main():
                 ),
                 sg.Push(),
                 sg.Slider(
-                    range=(0, 3.0),
+                    range=(0.05, 3.0),
                     orientation="h",
                     key="block_seconds",
                     resolution=0.001,
@@ -417,7 +417,7 @@ def main():
                 ),
                 sg.Push(),
                 sg.Slider(
-                    range=(0, 2.0),
+                    range=(0.05, 2.0),
                     orientation="h",
                     key="additional_infer_before_seconds",
                     resolution=0.001,
@@ -430,7 +430,7 @@ def main():
                 ),
                 sg.Push(),
                 sg.Slider(
-                    range=(0, 2.0),
+                    range=(0.05, 2.0),
                     orientation="h",
                     key="additional_infer_after_seconds",
                     resolution=0.001,
@@ -719,11 +719,11 @@ def main():
                 # Set a sensible default output path
                 window.Element("output_path").Update(str(get_output_path(input_path)))
             elif event == "infer":
-                if "Default VC" in values["presets"]:
-                    window["presets"].update(
-                        set_to_index=list(load_presets().keys()).index("Default File")
-                    )
-                    apply_preset("Default File")
+                # if "Default VC" in values["presets"]:
+                #     window["presets"].update(
+                #         set_to_index=list(load_presets().keys()).index("Default File")
+                #     )
+                #     apply_preset("Default File")
                 if values["input_path"] == "":
                     LOG.warning("Input path is empty.")
                     continue
