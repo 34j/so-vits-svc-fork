@@ -23,6 +23,7 @@ so-vits-svc-fork = "so_vits_svc_fork.__main__:cli"
 svc = "so_vits_svc_fork.__main__:cli"
 svcf = "so_vits_svc_fork.__main__:cli"
 svcg = "so_vits_svc_fork.gui:main"
+svcg-cn = "so_vits_svc_fork.guicn:main"
 svc-gui = "so_vits_svc_fork.gui:main"
 svcf-gui = "so_vits_svc_fork.gui:main"
 
