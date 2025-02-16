@@ -193,7 +193,7 @@ svc vc
 svc infer source.wav
 ```
 
-Pretrained models are available on [Hugging Face](https://huggingface.co/models?search=so-vits-svc) or [CIVITAI](https://civitai.com/?query=so-vits-svc).
+Pretrained models are available on [Hugging Face](https://huggingface.co/models?search=so-vits-svc) or [CIVITAI](https://civitai.com/tag/so-vits-svc-fork).
 
 #### Notes
 
