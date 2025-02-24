@@ -35,7 +35,7 @@ def normalize_f0(
 
 
 def interpolate_f0(
-    f0: ndarray[Any, dtype[float32]]
+    f0: ndarray[Any, dtype[float32]],
 ) -> tuple[ndarray[Any, dtype[float32]], ndarray[Any, dtype[float32]]]:
     data = np.reshape(f0, (f0.size, 1))
 
